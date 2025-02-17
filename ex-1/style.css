@@ -32,7 +32,7 @@
 }
 
 .introduction {
-  background-color: var(--Secondary-color);
+background-color: var(--Secondary-color);
 padding: var(--padding-level5);
 }
 
