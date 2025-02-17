@@ -4,4 +4,57 @@
   margin: 0;
 }
 
+/* กำหนด CSS Variables */
+:root {
+  /* Color Variables */
+  --branding-color: #ff7f50;
+  --secondary-color: cornsilk;
+  --highlight-color: #d2691e;
+  --muted-color: #a9a9a9;
+
+  /* Margin Variables */
+  --margin-1: 1px;
+  --margin-2: 5px;
+  --margin-3: 10px;
+  --margin-4: 15px;
+  --margin-5: 20px;
+
+  /* Padding Variables */
+  --padding-1: 1px;
+  --padding-2: 5px;
+  --padding-3: 10px;
+  --padding-4: 15px;
+  --padding-5: 20px;
+
+  /* Font Size Variables */
+  --font-small: 12px;
+  --font-medium: 16px;
+  --font-large: 20px;
+  --font-extra-large: 30px;
+  --font-double-extra-large: 50px;
+  --font-triple-extra-large: 100px;
+}
+
+/* ใช้ CSS Variables ตามโจทย์ */
+.introduction {
+  background-color: var(--secondary-color); /* พื้นหลังเป็น Secondary */
+  padding: var(--padding-5); /* Padding เป็น Level 5 */
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* h1 ใช้สี Branding และขนาด Triple Extra Large */
+.introduction h1 {
+  color: var(--branding-color);
+  font-size: var(--font-triple-extra-large);
+}
+
+/* h2 ไม่มีระบุสไตล์ในโจทย์ แม่หมอขอให้เป็นสี muted เพื่อให้ดูซอฟต์ */
+.introduction h2 {
+  color: var(--muted-color);
+  font-size: var(--font-extra-large);
+}
+
 /* Start coding here */
